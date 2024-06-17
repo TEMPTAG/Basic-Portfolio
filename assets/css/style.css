@@ -137,6 +137,9 @@ main {
   justify-content: space-between;
 }
 
+.about-me {
+}
+
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -152,6 +155,9 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
+}
+
+.work {
 }
 
 .flex-container {
@@ -195,6 +201,9 @@ main {
 
 .flex-item h3 {
   font-size: 1.6rem;
+}
+
+.contact-me {
 }
 
 .contact address {
