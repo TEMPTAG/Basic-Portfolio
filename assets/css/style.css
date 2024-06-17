@@ -8,7 +8,7 @@
   --secondary: rgb(255, 255, 255);
   --tertiary: rgb(83, 83, 83);
   --dark: rgb(52, 52, 52);
-  --light: rgba(238, 238, 247, 1);
+  --light: rgb(255, 255, 255);
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  color: var(--primary);
+  color: var(--tertiary);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -43,6 +43,10 @@ header {
   align-items: center;
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(204, 204, 204, 0.4);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999:
 }
 
 header h1 {
@@ -92,8 +96,8 @@ main {
 }
 
 .hero-banner {
-  background: rgb(114, 114, 114);
-  background-image: url("../images/HeroImage.jpg"),
+  background: rgb(114, 114, 114, 0.8);
+  background-image: url("../images/HeroImage2.jpg"),
     linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: bottom;
@@ -144,7 +148,7 @@ main {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid var(--primary);
+  border-right: 4px solid var(--tertiary);
   font-size: 4vw;
   line-height: 1.1;
 }
@@ -167,7 +171,7 @@ main {
 }
 
 .flex-item {
-  border: 5px solid var(--secondary);
+  border: 5px solid var(--tertiary);
   background-color: var(--primary);
   color: var(--tertiary);
   min-height: 150px;
@@ -203,7 +207,7 @@ main {
   font-size: 1.6rem;
 }
 
-.contact-me {
+.contact {
 }
 
 .contact address {
@@ -241,8 +245,27 @@ main {
 /* portfolio project images */
 /* TODO: Add portfolio project images here*/
 
-/* media queries */
+.run_buddy {
+    background-image: url("..images/run_buddy.jpeg");
+    background-position: center;
+}
 
+/* media queries */
 /* TODO: add media query for a max-width of 980px */
 
+/* @media screen and (max-width: 980px) {
+    
+} */
+
 /* TODO: add media query for a max-width of 768px */
+
+/* @media screen and (max-width 768px) {
+    .flex-item:first-child {
+        min-height: 150px;
+        max-height: 150px;
+    }
+    
+    .flex-item {
+        flex-basis: 100%;
+    }
+} */
