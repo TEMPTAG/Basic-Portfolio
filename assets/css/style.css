@@ -158,7 +158,10 @@ main {
 }
 
 .page-section p {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  /* margin-bottom: 20px; */
+  margin: 0.5em;
 }
 
 .flex-container {
@@ -242,15 +245,13 @@ main {
 .profile-image {
   border: 5px solid var(--secondary);
   content: url("https://media.licdn.com/dms/image/D5603AQHos_VJ3KZERg/profile-displayphoto-shrink_400_400/0/1706310656011?e=1724284800&v=beta&t=Of9ntRhoFctYHax5jxW7sjyO0pdTB4lSX9oGc-KfNR0");
-  flex-basis: 100%;
-  display: flex;
-  align-items: flex-end;
-  min-height: 150px;
+  flex: 1 1 auto;
+  min-height: 0;
   max-height: 400px;
-  min-width: 150px;
+  min-width: 0;
   max-width: 400px;
   margin: 0.5em;
-  display: flex;
+  box-sizing: border-box;
 }
 
 .flex-item.surf_report {
@@ -282,13 +283,27 @@ main {
 
 /* TODO: add media query for a max-width of 980px */
 
+@media screen and (max-width: 980px) {
+  .flex-item:first-child {
+    min-height: 250px;
+    flex-basis: 100%;
+  }
+}
+
 /* TODO: add media query for a max-width of 768px */
 
 @media screen and (max-width: 768px) {
+  .profile-image {
+    flex-basis: auto;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
   .flex-item,
   .flex-item:first-child {
     min-height: 150px;
     max-height: 150px;
     flex-basis: 100%;
+    margin: 0.5em 0;
   }
 }
