@@ -81,6 +81,7 @@ nav a {
   background-position: bottom;
   transition: all 0.25s ease-in;
   font-size: 1.4rem;
+  line-height: 1;
 }
 
 nav a:hover {
@@ -100,8 +101,8 @@ main {
 .hero-banner {
   /* background: rgb(68, 88, 120); */
   background: rgb(107, 107, 107);
-  background-image: url("../images/HeroImage2.jpg"),
-    linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("../images/DesertHero.jpg"),
+    linear-gradient(180deg, var(--secondary) 0%, var(--primary) 25%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -112,6 +113,7 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
+  transition: all 1.8s;
 }
 
 .hero-banner div {
@@ -119,11 +121,11 @@ main {
 }
 
 .hero-banner h2 {
-  background-color: var(--secondary);
+  background-color: rgb(218, 217, 217, 0.8);
   color: var(--tertiary);
   margin: 0;
   padding: 5px 10px;
-  font-size: 2.3rem;
+  font-size: 2.75vw;
   line-height: 1.2;
   display: inline;
 }
@@ -159,6 +161,7 @@ main {
 
 .page-section p {
   display: flex;
+  max-width: 600px;
   align-items: flex-end;
   /* margin-bottom: 20px; */
   margin: 0.5em;
@@ -255,27 +258,27 @@ main {
 }
 
 .flex-item.surf_report {
-  background-image: url("../images/waves.jpg");
-  background-position: bottom;
+  background-image: url("../images/waves2.jpg");
+  background-position: center;
 }
 
 .flex-item.led_wall {
-  background-image: url("../images/led.jpg");
+  background-image: url("../images/led2.jpg");
   background-position: center;
 }
 
 .flex-item.calculator {
-  background-image: url("../images/calculator.jpg");
+  background-image: url("../images/calculator2.jpg");
   background-position: center;
 }
 
 .flex-item.pastel_puzzles {
-  background-image: url("../images/puzzle.jpg");
+  background-image: url("../images/puzzle2.jpg");
   background-position: center;
 }
 
 .flex-item.run_buddy {
-  background-image: url("../images/run_buddy.jpg");
+  background-image: url("../images/run_buddy2.jpg");
   background-position: center;
 }
 
@@ -284,6 +287,12 @@ main {
 /* TODO: add media query for a max-width of 980px */
 
 @media screen and (max-width: 980px) {
+  .hero-banner {
+    min-height: 250px;
+    max-height: 400px;
+    transition: all 1.8s;
+  }
+
   .flex-item:first-child {
     min-height: 250px;
     flex-basis: 100%;
@@ -293,6 +302,12 @@ main {
 /* TODO: add media query for a max-width of 768px */
 
 @media screen and (max-width: 768px) {
+  .hero-banner {
+    min-height: 125px;
+    max-height: 250px;
+    transition: all 1.8s;
+  }
+
   .profile-image {
     flex-basis: auto;
     width: 100%;
