@@ -237,7 +237,7 @@ main {
   background-position: bottom;
 }
 
-.flex-item.surf_report .flex-item.led_wall {
+.flex-item.led_wall {
   background-image: url("../images/led.jpg");
   background-position: center;
 }
@@ -249,6 +249,7 @@ main {
 
 .flex-item.pastel_puzzles {
   background-image: url("../images/puzzle.jpg");
+  background-position: center;
 }
 
 .flex-item.run_buddy {
