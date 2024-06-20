@@ -159,7 +159,8 @@ main {
   flex: 0 0 77%;
 }
 
-.page-section p {
+.page-section p,
+.page-section .welcome {
   display: flex;
   max-width: 600px;
   align-items: flex-end;
@@ -257,27 +258,28 @@ main {
   box-sizing: border-box;
 }
 
-.flex-item.surf_report {
+.surf_report {
   background-image: url("../images/waves2.jpg");
+  width: 100%;
   background-position: center;
 }
 
-.flex-item.led_wall {
+.led_wall {
   background-image: url("../images/led2.jpg");
   background-position: center;
 }
 
-.flex-item.calculator {
+.calculator {
   background-image: url("../images/calculator2.jpg");
   background-position: center;
 }
 
-.flex-item.pastel_puzzles {
+.pastel_puzzles {
   background-image: url("../images/puzzle2.jpg");
   background-position: center;
 }
 
-.flex-item.run_buddy {
+.run_buddy {
   background-image: url("../images/run_buddy2.jpg");
   background-position: center;
 }
