@@ -2,7 +2,7 @@
 
 ---
 
-![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FPortfolio%2F&up_message=online&up_color=green&down_message=offline&down_color=red)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Ftemptag.github.io%2FBasic-Portfolio%2F&up_message=online&up_color=green&down_message=offline&down_color=red)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Portfolio)
 
 ## Description

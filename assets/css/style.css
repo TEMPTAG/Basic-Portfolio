@@ -249,7 +249,7 @@ main {
 
 .profile-image {
   border: 5px solid var(--secondary);
-  content: url("https://media.licdn.com/dms/image/D5603AQHos_VJ3KZERg/profile-displayphoto-shrink_400_400/0/1706310656011?e=1724284800&v=beta&t=Of9ntRhoFctYHax5jxW7sjyO0pdTB4lSX9oGc-KfNR0");
+  content: url("../images/profilePhoto.jpeg");
   flex: 1 1 auto;
   min-height: 0;
   max-height: 400px;
